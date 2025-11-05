@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class SceneManager1 : MonoBehaviour
 {
     public GameObject instructionPanel;
+    public GameObject PausePanel;
     public void RestartGame()
     {
         Time.timeScale = 1f;
@@ -14,7 +15,7 @@ public class SceneManager1 : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("scene.ui"); // Replace with your main menu scene name
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1); // Replace with your main menu scene name
     }
 
     // ✅ Load the Game/Play scene
@@ -34,7 +35,7 @@ public class SceneManager1 : MonoBehaviour
     // ✅ Pause the game
     public void PauseGame()
     {
-
+        PausePanel.SetActive(true);
         Time.timeScale = 0f;
         Debug.Log("Game Paused");
     }
@@ -42,7 +43,7 @@ public class SceneManager1 : MonoBehaviour
     // ✅ Resume the game
     public void ResumeGame()
     {
-
+        PausePanel.SetActive(false);
         Time.timeScale = 1f;
         Debug.Log("Game Resumed");
     }
