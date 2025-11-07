@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5589490967731570763}
   - component: {fileID: 8799187381945619396}
   - component: {fileID: 524174256808905286}
+  - component: {fileID: 4522501654865473467}
+  - component: {fileID: -4172803781249651538}
   m_Layer: 0
   m_Name: rocket
   m_TagString: Untagged
@@ -27,14 +29,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6150890495843848896}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 1.9117441, y: 4.079976, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.33, y: 0.33, z: 0.33}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5902823908836937307}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &5589490967731570763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -137,6 +139,58 @@ MonoBehaviour:
   explosionEffect: {fileID: 4410753201745303098, guid: a46c87aaf9034524b873ef7823d5c890, type: 3}
   explosionSound: {fileID: 0}
   destroyDelay: 1
+  ScoreText: {fileID: 0}
+--- !u!50 &4522501654865473467
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6150890495843848896}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-4172803781249651538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6150890495843848896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6cd9a111b262c4884be632c9cb5fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileManager: {fileID: 0}
+  anchorPoint: {fileID: 0}
+  snapRadius: 1.5
+  maxDragDistance: 3
+  launchPower: 8
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  slingshotLine: {fileID: 0}
+  trajectoryLine: {fileID: 0}
+  trajectoryResolution: 20
+  timeStep: 0.05
 --- !u!1001 &8200748898462553218
 PrefabInstance:
   m_ObjectHideFlags: 0

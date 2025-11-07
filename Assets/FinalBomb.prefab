@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5983949840668141920}
   - component: {fileID: 1123712039246754684}
   - component: {fileID: 7509404755454192409}
+  - component: {fileID: 6802586048309655672}
   m_Layer: 0
   m_Name: FinalBomb
   m_TagString: Untagged
@@ -102,6 +103,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 8930448545534350898, guid: d7ac4017ad6ad9f45bacdfca7706c3e7, type: 3}
   explosionSound: {fileID: 0}
   destroyDelay: 1
+  ScoreText: {fileID: 0}
 --- !u!50 &1123712039246754684
 Rigidbody2D:
   serializedVersion: 4
@@ -117,7 +119,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -164,3 +166,27 @@ CapsuleCollider2D:
   m_Offset: {x: -0.056917787, y: -0.6179633}
   m_Size: {x: 2.0245183, y: 2.195146}
   m_Direction: 0
+--- !u!114 &6802586048309655672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222200698694348040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6cd9a111b262c4884be632c9cb5fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileManager: {fileID: 0}
+  anchorPoint: {fileID: 0}
+  snapRadius: 1.5
+  maxDragDistance: 3
+  launchPower: 8
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  slingshotLine: {fileID: 0}
+  trajectoryLine: {fileID: 0}
+  trajectoryResolution: 20
+  timeStep: 0.05
