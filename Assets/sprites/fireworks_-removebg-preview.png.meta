@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6c816726488e0b64084341a29b0c4ed1
+guid: 82d0388670dfd4b4eb08695ee7a40e1c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: explosion sprite_1
+      name: fireworks_-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 70
-        y: 12
-        width: 62
-        height: 67
+        x: 10
+        y: 192
+        width: 67
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 667cb52ef2b3def49aeb85da9578d0fa
-      internalID: 989699981
+      spriteID: f1be282a8ae128c4798edf996d80390b
+      internalID: -1776244834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosion sprite_0
+      name: fireworks_-removebg-preview_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 13
-        width: 62
-        height: 67
+        x: 56
+        y: 194
+        width: 67
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8585407c970ebf478534282be57471c
-      internalID: -1332880171
+      spriteID: 1a9a8c154dbb5714ea092a9707f531b0
+      internalID: -1469545857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosion sprite_2
+      name: fireworks_-removebg-preview_2
       rect:
         serializedVersion: 2
-        x: 130
-        y: 13
-        width: 62
-        height: 67
+        x: 110
+        y: 194
+        width: 67
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09e953badcf504342b4e40438c90d064
-      internalID: 722816519
+      spriteID: 00b05d364a712cb4ea9e4379447b9ece
+      internalID: 130867702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosion sprite_3
+      name: fireworks_-removebg-preview_3
       rect:
         serializedVersion: 2
-        x: 200
-        y: 13
-        width: 62
-        height: 67
+        x: 181
+        y: 197
+        width: 67
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b44b247e82907b84fa49eb394e11c16e
-      internalID: -1424427296
+      spriteID: 971130bb9abf6c242888c919e1c4d9c2
+      internalID: 584337304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosion sprite_4
+      name: fireworks_-removebg-preview_4
       rect:
         serializedVersion: 2
-        x: 276
-        y: 16
-        width: 62
-        height: 67
+        x: 268
+        y: 197
+        width: 67
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99888b3c1005a5f44bbf44f66c3dd9cc
-      internalID: 949753094
+      spriteID: 5d78a764e4b59cb469434e8758fa82f6
+      internalID: -1958205500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosion sprite_5
+      name: fireworks_-removebg-preview_5
       rect:
         serializedVersion: 2
-        x: 355
-        y: 18
-        width: 62
-        height: 67
+        x: 371
+        y: 197
+        width: 67
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd1d964fcad104b44b1cd45c8ad0faf9
-      internalID: 1866093836
+      spriteID: 56b0889448b920e43b4c9a991191a565
+      internalID: 789600187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosion sprite_6
+      name: fireworks_-removebg-preview_6
       rect:
         serializedVersion: 2
-        x: 416
-        y: 18
-        width: 62
-        height: 67
+        x: 491
+        y: 191
+        width: 90
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,8 +237,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83d56bdc1e197ea45b276fd795501443
-      internalID: 2088631241
+      spriteID: fa12a76b08f42c7448c63b3a56d20cef
+      internalID: -558348478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireworks_-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 20
+        width: 136
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb3d3ad7d6aedf468768bbdc11da7d7
+      internalID: -664698413
       vertices: []
       indices: 
       edges: []
@@ -254,13 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      explosion sprite_0: -1332880171
-      explosion sprite_1: 989699981
-      explosion sprite_2: 722816519
-      explosion sprite_3: -1424427296
-      explosion sprite_4: 949753094
-      explosion sprite_5: 1866093836
-      explosion sprite_6: 2088631241
+      fireworks_-removebg-preview_0: -1776244834
+      fireworks_-removebg-preview_1: -1469545857
+      fireworks_-removebg-preview_2: 130867702
+      fireworks_-removebg-preview_3: 584337304
+      fireworks_-removebg-preview_4: -1958205500
+      fireworks_-removebg-preview_5: 789600187
+      fireworks_-removebg-preview_6: -558348478
+      fireworks_-removebg-preview_7: -664698413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

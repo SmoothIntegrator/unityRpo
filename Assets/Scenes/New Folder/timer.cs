@@ -13,7 +13,7 @@ public class timer : MonoBehaviour
     public GameObject panel2;
 
     private bool isrunning;
-    private bool player1;
+    public bool player1;
     private bool gameover;
     private int rounds;
     public int roundsmax = 3;
