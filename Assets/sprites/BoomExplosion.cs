@@ -7,7 +7,9 @@ public class BoomExplosion : MonoBehaviour
     public GameObject explosionEffect;      // Assign explosion prefab
     public AudioClip explosionSound;        // Assign explosion sound
     public float destroyDelay = 1f;         // Wait before destroying after explosion
-    public TextMeshPro ScoreText;
+    public TextMeshPro ScoreText1;
+    public TextMeshPro ScoreText2;
+    public timer Timer;
 
     private AudioSource audioSource;
     private bool hasExploded = false;
@@ -24,9 +26,31 @@ public class BoomExplosion : MonoBehaviour
         // Ignore collision with camera
         if (collision.gameObject.CompareTag("MainCamera"))
             return;
-        if (collision.gameObject.CompareTag("Building"))
+        if (collision.gameObject.CompareTag("Bird") && Timer.player1 == true)
+        {
+            int currentScore = int.Parse(ScoreText1.text);
+            currentScore -= 5;
+            ScoreText1.text = currentScore.ToString();
+        }
+        else if (collision.gameObject.CompareTag("Bird") && Timer.player1 == false)
+        {
+            int currentScore = int.Parse(ScoreText2.text);
+            currentScore -= 5;
+            ScoreText2.text = currentScore.ToString();
+        }
+        if (collision.gameObject.CompareTag("Player2"))
+        {
+            int currentScore = int.Parse(ScoreText1.text);
+            currentScore += 10;
+            ScoreText1.text = currentScore.ToString();
+        }
+        else if (collision.gameObject.CompareTag("Player1"))
+        {
+            int currentScore = int.Parse(ScoreText2.text);
+            currentScore += 10;
+            ScoreText2.text = currentScore.ToString();
+        }
 
-            
         hasExploded = true;
         Explode();
     }

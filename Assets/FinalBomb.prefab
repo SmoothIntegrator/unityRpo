@@ -104,6 +104,11 @@ MonoBehaviour:
   explosionSound: {fileID: 0}
   destroyDelay: 1
   ScoreText: {fileID: 0}
+=======
+  ScoreText1: {fileID: 0}
+  ScoreText2: {fileID: 0}
+  Timer: {fileID: 3980721509681425694, guid: 7bc1769e696cfff408221f0e5f22ed68, type: 3}
+>>>>>>> Stashed changes
 --- !u!50 &1123712039246754684
 Rigidbody2D:
   serializedVersion: 4
