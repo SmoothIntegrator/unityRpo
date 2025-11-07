@@ -103,6 +103,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 8930448545534350898, guid: d7ac4017ad6ad9f45bacdfca7706c3e7, type: 3}
   explosionSound: {fileID: 0}
   destroyDelay: 1
+<<<<<<< Updated upstream
   ScoreText: {fileID: 0}
 =======
   ScoreText1: {fileID: 0}
