@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class DelayedLevelTeleporter2D : MonoBehaviour
+    
 {
+    public GameObject Player2;
     [Header("Level Settings")]
     public Transform[] levels;        // All possible level positions
     public int currentLevel = 0;      // Starting level index
@@ -34,12 +36,21 @@ public class DelayedLevelTeleporter2D : MonoBehaviour
             return;
 
         // Move up
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.W) && Player2.CompareTag("Player1") )
         {
             moveRoutine = StartCoroutine(MoveAfterDelay(currentLevel + 1));
         }
         // Move down
-        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.S) && Player2.CompareTag("Player1"))
+        {
+            moveRoutine = StartCoroutine(MoveAfterDelay(currentLevel - 1));
+        }
+        if ( Input.GetKeyDown(KeyCode.UpArrow) && Player2.CompareTag("Player2"))
+        {
+            moveRoutine = StartCoroutine(MoveAfterDelay(currentLevel + 1));
+        }
+        // Move down
+        else if ( Input.GetKeyDown(KeyCode.DownArrow) && Player2.CompareTag("Player2"))
         {
             moveRoutine = StartCoroutine(MoveAfterDelay(currentLevel - 1));
         }
