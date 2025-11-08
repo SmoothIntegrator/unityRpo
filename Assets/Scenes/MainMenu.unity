@@ -1553,6 +1553,8 @@ MonoBehaviour:
   m_text: "\n\n\nAim & Shoot:\nClick + Drag the weapon to aim\nRelease to fire\n\nMovement:\nLeft
     and right players move across windows with W / S and \u2191 / \u2193 keys respectively\n\nScoring:\nHit
     the enemy = +100 PTS\nHit the bird = -50 PTS\n\nTurns:\nEach player gets 30 seconds
+    Player : W / S keys\nRigth Player : \u2191 / \u2193 keys\n\nScoring:\nHit the
+    enemy = +100 PTS\nHit the bird = -50 PTS\n\nTurns:\nEach player gets 30 seconds
     per turn\nTurns switch automatically\n\nGoal:\nScore higher than your opponent
     to WIN\n\n"
   m_isRightToLeft: 0
