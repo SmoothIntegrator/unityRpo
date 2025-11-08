@@ -111,14 +111,23 @@ public class timer : MonoBehaviour
             if (Score1 > Score2)
             {
                 Winpanel1.SetActive(true);
+                timertext.gameObject.SetActive(false);
+                ScoreText1.gameObject.SetActive(false);
+                ScoreText2.gameObject.SetActive(false);
             }
             else if (Score1 < Score2)
             {
                 Winpanel2.SetActive(true);
+                timertext.gameObject.SetActive(false);
+                ScoreText1.gameObject.SetActive(false);
+                ScoreText2.gameObject.SetActive(false);
             }
             else if (Score1 == Score2)
             {
                 Tiepanel.SetActive(true);
+                timertext.gameObject.SetActive(false);
+                ScoreText1.gameObject.SetActive(false);
+                ScoreText2.gameObject.SetActive(false);
             }
             panel.SetActive(false);
             panel2.SetActive(false);
