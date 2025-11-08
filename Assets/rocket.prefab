@@ -195,6 +195,7 @@ MonoBehaviour:
   trajectoryResolution: 20
   timeStep: 0.05
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   rb: {fileID: 0}
   hasLaunched: 0
   Timer: {fileID: 0}
@@ -210,6 +211,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c161e662e8884fe4ea755fdb839ad55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  hasLaunched: 0
+  Timer: {fileID: 0}
+>>>>>>> Stashed changes
 =======
   hasLaunched: 0
   Timer: {fileID: 0}

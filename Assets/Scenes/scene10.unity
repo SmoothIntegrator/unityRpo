@@ -6811,6 +6811,7 @@ MonoBehaviour:
   Player1: {fileID: 177561325739736183}
   Player2: {fileID: 1337356202}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   ScoreTextP1: {fileID: 1161623857}
   ScoreTextP2: {fileID: 265692819}
 --- !u!1 &1936692346
@@ -6854,11 +6855,15 @@ RectTransform:
 =======
 --- !u!114 &1906259500
 >>>>>>> Stashed changes
+=======
+--- !u!114 &1906259500
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1936692346}
   m_Enabled: 1
@@ -6952,6 +6957,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 1936692346}
   m_CullTransparentMesh: 1
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1906259492}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6961,6 +6968,9 @@ CanvasRenderer:
   birdPrefab: {fileID: 5882436484636727322, guid: 4fd2d2871519e6345be40bd0e574b5ef, type: 3}
   spawnPoints:
   - {fileID: 2057966306}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1986553102
 GameObject:
