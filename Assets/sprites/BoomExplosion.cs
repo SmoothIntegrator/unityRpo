@@ -2,14 +2,18 @@ using UnityEngine;
 using TMPro;
 
 public class BoomExplosion : MonoBehaviour
+
 {
+
     [Header("Explosion Settings")]
+    public SlingshotDrag slingshotDrag;
     public GameObject explosionEffect;
     public AudioClip explosionSound;
     public float destroyDelay = 1f;
     public TextMeshProUGUI ScoreText1;
     public TextMeshProUGUI ScoreText2;
     public timer Timer;
+    public SlingshotDrag slingshotDragScript;
 
     private AudioSource audioSource;
     private bool hasExploded = false;
@@ -37,6 +41,7 @@ public class BoomExplosion : MonoBehaviour
     }
     void OnEnable()
     {
+        slingshotDragScript = GetComponent<SlingshotDrag>();
         Collider2D myCollider = GetComponent<Collider2D>();
         if (myCollider == null) return;
 
@@ -56,7 +61,8 @@ public class BoomExplosion : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (hasExploded) return;
-        if (collision.gameObject.GetComponent<BoomExplosion>() != null)
+    if (!slingshotDragScript.hasLaunched) return;
+    if (collision.gameObject.GetComponent<BoomExplosion>() != null)
         {
             Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.collider);
             return;
@@ -95,24 +101,24 @@ public class BoomExplosion : MonoBehaviour
 
     void Explode()
     {
-
+        // Spawn explosion
         if (explosionEffect != null)
         {
-            GameObject effect = Instantiate(explosionEffect, transform.position, transform.rotation);
-            Destroy(effect, destroyDelay);
+            GameObject effect = Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            Destroy(effect, destroyDelay); // Let explosion animation play
         }
 
+        // Play Sound
         if (explosionSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(explosionSound);
         }
 
-        Collider col = GetComponent<Collider>();
-        if (col != null) col.enabled = false;
+        // Notify the ProjectileManager BEFORE destroying the projectile
+        slingshotDragScript.projectileManager.OnProjectileDestroyed();
 
-        SpriteRenderer mr = GetComponent<SpriteRenderer>();
-        if (mr != null) mr.enabled = false;
-
-        Destroy(gameObject, destroyDelay);
+        // Destroy projectile immediately — explosion is separate so no delay
+        Destroy(gameObject);
     }
+
 }
