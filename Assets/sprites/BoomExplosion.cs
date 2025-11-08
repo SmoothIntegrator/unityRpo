@@ -4,11 +4,11 @@ using TMPro;
 public class BoomExplosion : MonoBehaviour
 {
     [Header("Explosion Settings")]
-    public GameObject explosionEffect;      // Assign explosion prefab
-    public AudioClip explosionSound;        // Assign explosion sound
-    public float destroyDelay = 1f;         // Wait before destroying after explosion
-    public TextMeshPro ScoreText1;
-    public TextMeshPro ScoreText2;
+    public GameObject explosionEffect;
+    public AudioClip explosionSound;
+    public float destroyDelay = 1f;
+    public TextMeshProUGUI ScoreText1;
+    public TextMeshProUGUI ScoreText2;
     public timer Timer;
 
     private AudioSource audioSource;
@@ -17,13 +17,51 @@ public class BoomExplosion : MonoBehaviour
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
+        if (ScoreText1 == null || ScoreText2 == null)
+        {
+            TextMeshProUGUI[] texts = FindObjectsOfType<TextMeshProUGUI>(true);
+            foreach (var text in texts)
+            {
+                if (text.name == "ScoreText1")
+                    ScoreText1 = text;
+                if (text.name == "ScoreText2")
+                    ScoreText2 = text;
+            }
+        }
+
+        if (Timer == null)
+            Timer = FindObjectOfType<timer>();
+        if (ScoreText1 == null) Debug.LogError("❌ ScoreText1 not found!");
+        if (ScoreText2 == null) Debug.LogError("❌ ScoreText2 not found!");
+        if (Timer == null) Debug.LogError("❌ Timer not found!");
     }
+    void OnEnable()
+    {
+        Collider2D myCollider = GetComponent<Collider2D>();
+        if (myCollider == null) return;
+
+        BoomExplosion[] allExplosions = FindObjectsOfType<BoomExplosion>();
+        foreach (var other in allExplosions)
+        {
+            if (other == this) continue;
+            Collider2D otherCollider = other.GetComponent<Collider2D>();
+            if (otherCollider != null)
+            {
+                Physics2D.IgnoreCollision(myCollider, otherCollider, true);
+            }
+        }
+    }
+
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (hasExploded) return;
+        if (collision.gameObject.GetComponent<BoomExplosion>() != null)
+        {
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.collider);
+            return;
+        }
 
-        // Ignore collision with camera
         if (collision.gameObject.CompareTag("MainCamera"))
             return;
         if (collision.gameObject.CompareTag("Bird") && Timer.player1 == true)
@@ -57,27 +95,24 @@ public class BoomExplosion : MonoBehaviour
 
     void Explode()
     {
-        // Spawn explosion effect
+
         if (explosionEffect != null)
         {
             GameObject effect = Instantiate(explosionEffect, transform.position, transform.rotation);
-            Destroy(effect, destroyDelay); // destroy only the spawned effect
+            Destroy(effect, destroyDelay);
         }
 
-        // Play sound
         if (explosionSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(explosionSound);
         }
 
-        // Disable the bullet visuals and collider immediately
         Collider col = GetComponent<Collider>();
         if (col != null) col.enabled = false;
 
         SpriteRenderer mr = GetComponent<SpriteRenderer>();
         if (mr != null) mr.enabled = false;
 
-        // Destroy the bullet object after delay
         Destroy(gameObject, destroyDelay);
     }
 }

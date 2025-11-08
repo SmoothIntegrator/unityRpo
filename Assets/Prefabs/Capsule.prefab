@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8056134320258298153}
   - component: {fileID: -8006687388559549493}
   - component: {fileID: -827021336588810581}
+  - component: {fileID: -2463145415647139664}
+  - component: {fileID: -7095058498027408858}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -128,8 +130,8 @@ MonoBehaviour:
   projectileManager: {fileID: 0}
   anchorPoint: {fileID: 0}
   snapRadius: 1.5
-  maxDragDistance: 3
-  launchPower: 8
+  maxDragDistance: 1
+  launchPower: 15
   collisionLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -137,3 +139,56 @@ MonoBehaviour:
   trajectoryLine: {fileID: 0}
   trajectoryResolution: 20
   timeStep: 0.05
+--- !u!114 &-2463145415647139664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5875743681414194295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fd1cb7091468c42beac02ce03a76e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 0}
+  explosionSound: {fileID: 0}
+  destroyDelay: 1
+  ScoreText1: {fileID: 0}
+  ScoreText2: {fileID: 0}
+  Timer: {fileID: 0}
+--- !u!70 &-7095058498027408858
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5875743681414194295}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0

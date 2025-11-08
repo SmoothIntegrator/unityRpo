@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class SlingshotDrag : MonoBehaviour
 {
     [Header("Slingshot Settings (Auto-Detected)")]
-    [HideInInspector] public ProjectileManager projectileManager; // auto-assigned at runtime
-    [HideInInspector] public Transform anchorPoint;               // slingshot base point
+    [HideInInspector] public ProjectileManager projectileManager; 
+    [HideInInspector] public Transform anchorPoint;
 
     [Header("Gameplay Settings")]
     public float snapRadius = 1.5f;
@@ -23,22 +23,23 @@ public class SlingshotDrag : MonoBehaviour
     private Rigidbody2D rb;
     private bool isSnapped = false;
     private bool isDragging = false;
-    private bool hasLaunched = false;
-
+    public bool hasLaunched = false;
+    public timer Timer;
     void Awake()
     {
-        // Automatically find the manager and anchor point if not assigned
         if (projectileManager == null)
             projectileManager = FindObjectOfType<ProjectileManager>();
 
         if (anchorPoint == null && projectileManager != null)
             anchorPoint = projectileManager.handPosition;
+        if (Timer == null)
+            Timer = FindObjectOfType<timer>();
     }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 1f;
+        rb.gravityScale = 0f; 
 
         if (slingshotLine != null)
         {
@@ -52,7 +53,6 @@ public class SlingshotDrag : MonoBehaviour
             trajectoryLine.enabled = false;
         }
 
-        // Snap if near anchor
         if (anchorPoint != null && Vector2.Distance(transform.position, anchorPoint.position) <= snapRadius)
             SnapToAnchor();
     }
@@ -60,11 +60,16 @@ public class SlingshotDrag : MonoBehaviour
     void Update()
     {
         if (anchorPoint == null) return;
+        if (!Timer.player1 && anchorPoint.name == "Hand1") return;
+        if (Timer.player1 && anchorPoint.name == "Hand2") return;
+
 
         if (!isSnapped && !hasLaunched)
         {
             if (Vector2.Distance(transform.position, anchorPoint.position) <= snapRadius)
                 SnapToAnchor();
+            else
+                rb.velocity = Vector2.zero; 
         }
 
         if (isSnapped)
@@ -75,6 +80,7 @@ public class SlingshotDrag : MonoBehaviour
             if (slingshotLine != null) slingshotLine.enabled = false;
             if (trajectoryLine != null) trajectoryLine.enabled = false;
         }
+        
     }
 
     void SnapToAnchor()
@@ -82,6 +88,7 @@ public class SlingshotDrag : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.isKinematic = true;
+        rb.gravityScale = 0f;
         transform.position = anchorPoint.position;
         isSnapped = true;
     }
@@ -120,6 +127,7 @@ public class SlingshotDrag : MonoBehaviour
     void Launch()
     {
         rb.isKinematic = false;
+        rb.gravityScale = 1f;
         Vector2 launchDir = (Vector2)anchorPoint.position - (Vector2)transform.position;
         rb.velocity = launchDir * launchPower;
 
@@ -186,4 +194,5 @@ public class SlingshotDrag : MonoBehaviour
 
         Destroy(gameObject);
     }
+     
 }
