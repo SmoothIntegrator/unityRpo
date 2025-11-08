@@ -2484,7 +2484,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1729023375}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1906259497}
+        m_TargetAssemblyTypeName: SceneManager1, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &678185119
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3751,7 +3763,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 311626254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1906259497}
+        m_TargetAssemblyTypeName: SceneManager1, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1212598086
 CanvasRenderer:
   m_ObjectHideFlags: 0
