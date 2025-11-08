@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 public class SceneManager1 : MonoBehaviour
 {
     public GameObject instructionPanel;
