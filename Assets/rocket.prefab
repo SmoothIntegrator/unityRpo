@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 4410753201745303098, guid: a46c87aaf9034524b873ef7823d5c890, type: 3}
-  explosionSound: {fileID: 0}
+  explosionSound: {fileID: 8300000, guid: d1b95e76cb34a634492e30b9e54506d7, type: 3}
   destroyDelay: 1
   ScoreText1: {fileID: 0}
   ScoreText2: {fileID: 0}
@@ -169,7 +169,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &-4172803781249651538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +194,7 @@ MonoBehaviour:
   trajectoryLine: {fileID: 0}
   trajectoryResolution: 20
   timeStep: 0.05
+<<<<<<< Updated upstream
   rb: {fileID: 0}
   hasLaunched: 0
   Timer: {fileID: 0}
@@ -209,6 +210,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c161e662e8884fe4ea755fdb839ad55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  hasLaunched: 0
+  Timer: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1001 &8200748898462553218
 PrefabInstance:
   m_ObjectHideFlags: 0

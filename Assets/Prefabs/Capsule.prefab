@@ -114,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &-827021336588810581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 8930448545534350898, guid: d7ac4017ad6ad9f45bacdfca7706c3e7, type: 3}
-  explosionSound: {fileID: 0}
+  explosionSound: {fileID: 8300000, guid: d1b95e76cb34a634492e30b9e54506d7, type: 3}
   destroyDelay: 1
   ScoreText1: {fileID: 0}
   ScoreText2: {fileID: 0}

@@ -3556,7 +3556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.11372549}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3597,8 +3597,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 200, y: 0}
-  m_SizeDelta: {x: -400, y: 0}
+  m_AnchoredPosition: {x: 200, y: -38.1426}
+  m_SizeDelta: {x: -400, y: -76.2851}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &753951582
 GameObject:
@@ -4508,7 +4508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.11372549}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4549,8 +4549,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -200, y: 0}
-  m_SizeDelta: {x: -400, y: 0}
+  m_AnchoredPosition: {x: -200, y: -38.1426}
+  m_SizeDelta: {x: -400, y: -76.2851}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1066057762
 GameObject:
@@ -6634,6 +6634,7 @@ GameObject:
   - component: {fileID: 1906259497}
   - component: {fileID: 1906259498}
   - component: {fileID: 1906259499}
+  - component: {fileID: 1906259500}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6809,6 +6810,7 @@ MonoBehaviour:
   ScoreText2: {fileID: 1120445705}
   Player1: {fileID: 177561325739736183}
   Player2: {fileID: 1337356202}
+<<<<<<< Updated upstream
   ScoreTextP1: {fileID: 1161623857}
   ScoreTextP2: {fileID: 265692819}
 --- !u!1 &1936692346
@@ -6849,11 +6851,15 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1936692348
+=======
+--- !u!114 &1906259500
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1936692346}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6945,6 +6951,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936692346}
   m_CullTransparentMesh: 1
+=======
+  m_GameObject: {fileID: 1906259492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4288d2225bff64e900dafd95d5ec32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdPrefab: {fileID: 5882436484636727322, guid: 4fd2d2871519e6345be40bd0e574b5ef, type: 3}
+  spawnPoints:
+  - {fileID: 2057966306}
+>>>>>>> Stashed changes
 --- !u!1 &1986553102
 GameObject:
   m_ObjectHideFlags: 0
@@ -7073,6 +7090,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.299988, y: -3.5200043, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2057966305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2057966306}
+  m_Layer: 0
+  m_Name: spawn position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2057966306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057966305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.12, y: 3.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7984,3 +8032,4 @@ SceneRoots:
   - {fileID: 804877214}
   - {fileID: 601780082}
   - {fileID: 2146441865}
+  - {fileID: 2057966306}
