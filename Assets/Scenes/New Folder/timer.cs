@@ -24,6 +24,8 @@ public class timer : MonoBehaviour
     public TextMeshProUGUI ScoreText2;
     public GameObject Player1;
     public GameObject Player2;
+    public TextMeshProUGUI ScoreTextP1;
+    public TextMeshProUGUI ScoreTextP2;
     //
     void Start()
     {
@@ -111,6 +113,7 @@ public class timer : MonoBehaviour
             if (Score1 > Score2)
             {
                 Winpanel1.SetActive(true);
+                ScoreTextP1.text = Score1.ToString(); 
                 timertext.gameObject.SetActive(false);
                 ScoreText1.gameObject.SetActive(false);
                 ScoreText2.gameObject.SetActive(false);
@@ -118,6 +121,8 @@ public class timer : MonoBehaviour
             else if (Score1 < Score2)
             {
                 Winpanel2.SetActive(true);
+                ScoreTextP2.text = Score2.ToString();
+
                 timertext.gameObject.SetActive(false);
                 ScoreText1.gameObject.SetActive(false);
                 ScoreText2.gameObject.SetActive(false);
@@ -131,6 +136,9 @@ public class timer : MonoBehaviour
             }
             panel.SetActive(false);
             panel2.SetActive(false);
+            ScoreText1.enabled = false;
+            ScoreText2.enabled = false;
+            timertext.enabled = false;
         }
     }
 }

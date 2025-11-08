@@ -68,7 +68,8 @@ public class ProjectileManager : MonoBehaviour
         if ((projectile.name.Contains("rocket") || projectile.name.Contains("Rocket")) && handPosition.name.Contains("Hand1"))
         {
             projectile.transform.Rotate(0f, 0f, -90f);
-        } else if ((projectile.name.Contains("rocket") || projectile.name.Contains("Rocket")) && handPosition.name.Contains("Hand2"))
+        } 
+        if ((projectile.name.Contains("rocket") || projectile.name.Contains("Rocket")) && handPosition.name.Contains("Hand2"))
         {
             projectile.transform.Rotate(0f, 0f, 90f);
         }
