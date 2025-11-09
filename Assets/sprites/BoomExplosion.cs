@@ -72,12 +72,14 @@ public class BoomExplosion : MonoBehaviour
             return;
         if (collision.gameObject.CompareTag("Bird") && Timer.player1 == true)
         {
+            Destroy(collision.gameObject);
             int currentScore = int.Parse(ScoreText1.text);
             currentScore -= 5;
             ScoreText1.text = currentScore.ToString();
         }
         else if (collision.gameObject.CompareTag("Bird") && Timer.player1 == false)
         {
+            Destroy(collision.gameObject);
             int currentScore = int.Parse(ScoreText2.text);
             currentScore -= 5;
             ScoreText2.text = currentScore.ToString();

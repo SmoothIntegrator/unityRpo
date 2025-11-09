@@ -20,7 +20,7 @@ public class SlingshotDrag : MonoBehaviour
     public int trajectoryResolution = 20;
     public float timeStep = 0.05f;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private bool isSnapped = false;
     private bool isDragging = false;
     public bool hasLaunched = false;
