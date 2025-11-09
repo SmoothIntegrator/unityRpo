@@ -1,25 +1,24 @@
 # 🎮 BG13 — BATTLE GROUNDS 13
 
-**BG13** is a competitive two–player slingshot battle game inspired by the **2025 Hall 13 Diwali B-Block + D-Block vs C-Block + E-Block rivalry** — a Diwali night that felt like an actual battleground.
+**BG13** is a competitive two–player slingshot battle game inspired by the **2025 Hall 13 Diwali B-Block + C-Block vs D-Block + E-Block rivalry** — a Diwali night that truly felt like a battlefield.
 
 Windows turned into sniper points.  
-Fireworks turned into artillery.  
-Voices echoed across the courtyard.
+Fireworks became artillery.  
+Voices echoed across the courtyard like war cries.
 
-This game **recreates the energy, laughter, and chaos of that Diwali**.
+This game **recreates the energy, laughter, rivalry, and chaos** of that unforgettable Diwali night.
 
 ---
 
 ## 🔥 Origin Story — Why "BG13"?
 
-During **Diwali in Hall 13**, hostels **B + D Blocks** and **C + E Blocks** entered into a playful but intense rivalry.  
-Students lined up at their windows, launching *anything they could turn into a projectile*.  
-The sky between buildings became a **war zone** of aim, and excitement.
+On **Diwali in Hall 13**, students of **B + C Blocks** and **D + E Blocks** found themselves drawn into a playful yet intense competition.  
+From one building to another, students launched **creative projectiles**, aiming and reacting with precision, cheers, and pure adrenaline.  
 
-This game is a **fun, safe, digital tribute** to that unforgettable **Diwali War**.
+The sky between the blocks became a **live battleground of aim, timing, and wit**.
 
-
-
+This game is a **fun, safe, digital tribute** to that iconic night —  
+A memory worth preserving, retelling, and reliving.
 
 ---
 
@@ -27,78 +26,74 @@ This game is a **fun, safe, digital tribute** to that unforgettable **Diwali War
 
 | Feature | Description |
 |--------|-------------|
-| **Slingshot Shooting** | Drag → Aim → Release (like Angry Birds). |
-| **Rocket Boost Mechanic** | Right-click mid-flight to boost and switch to straight-line velocity. |
-| **Bomb Projectile** | A simple timed projectile with clean hit detection (no explosion physics). |
-| **Turn Timer** | Gameplay alternates turns automatically every round. |
-| **Window Movement for Player 2** | Player 2 can move **UP/DOWN** switching building windows using **Arrow Keys**. |
-| **Window Movement for Player 1** | Player 2 can move **UP/DOWN** switching building windows using **W/S Keys**. |
-| **Movement Cooldown** | After pressing **W/S** or **Arrow Keys**, a small cooldown prevents spamming. |
-| **Central Bird Obstacle** | Moves vertically, spawns every 10 seconds, dies if not hit in 5 seconds. |
-| **Winner Screen** | End of match displays final scores and declares the winner. |
+| **Slingshot Shooting** | Drag → Aim → Release (classic physics mechanic). |
+| **Rocket Boost** | Right-click mid-flight to switch to straight-line velocity. |
+| **Bomb Projectile** | Alternate weapon mode with clean collision logic. |
+| **Turn Timer (30 Seconds)** | Each turn auto-switches after the timer ends. |
+| **Window Movement** | Both players shift window position vertically. |
+| **Movement Cooldown** | Prevents abuse/spam window switching. |
+| **Central Bird Obstacle** | Spawns every 10 seconds, lasts 5 seconds if untouched. |
+| **Winner Screen** | Game auto-calculates and displays final winner. |
 
 ---
 
 ## 🧍 Controls
 
-| Action | Player 1 | Player 2 |
-|-------|----------|----------|
-| Shoot | Mouse Drag + Release | Mouse Drag + Release |
-| Rocket Boost | Right-click | Right-click |
-| Move Window | — | `W / S` or `↑ / ↓` *(with cooldown)* |
-| Pause Game | `Esc` | `Esc` |
+| Action | Player 1 (B + C Block Side) | Player 2 (D + E Block Side) |
+|-------|-----------------------------|-----------------------------|
+| Shoot | Mouse Drag + Release        | Mouse Drag + Release        |
+| Rocket Boost | Right-click          | Right-click                 |
+| Move Window | `W / S` (with cooldown) | `↑ / ↓` Arrow Keys (with cooldown) |
+| Pause Game | `Esc`                  | `Esc`                       |
 
-> **Tip:** Player 2 must **choose movement moments wisely** because of the cooldown system.
+> **Strategy:** Window movement has a cooldown — so reposition **wisely**, not constantly.
 
 ---
 
-## 🐦 Bird Behavior
+## 🐦 Bird Behavior (The Chaos Element)
 
 - Appears **every 10 seconds**
-- Moves **only up/down** in the center zone
-- Disappears if **not hit for 5 seconds**
-- **Hitting the bird = -5 points**
-- Designed to **interrupt your perfect shot**
+- Moves **only up and down**
+- Disappears if **not hit within 5 seconds**
+- Hitting it results in **−5 points**
+- It exists to **destroy your perfect shot and create chaos**
 
 ---
 
 ## 🧮 Scoring System
 
 | Event | Score |
-|------|------|
-| Hit opponent | **+10** |
+|------|-------|
+| Hit opponent (rocket or bomb) | **+10** |
 | Hit bird | **−5** |
-| Bomb hits opponent | **+10** |
-| Bomb hits bird | **−5** |
+
+Simple. Clean. Fair. Competitive.
 
 ---
 
 ## 🏁 Game Flow
 
-1. Player 1 starts the round.
-2.  30 sec timer counts down.
+1. Player 1 takes the first shot.
+2. A **30-second countdown** runs.
 3. Turn switches to Player 2.
-4. Both players alternately launch rockets/bombs.
-5. Bird appears periodically, adding chaos.
-6. After final round → **Winner Screen** with total scores.
+4. Both players alternate shots.
+5. Bird occasionally enters to challenge precision.
+6. After all rounds — **Winner Screen announces the champion**.
 
 ---
 
 ## ❤️ Tribute to Hall 13
 
-This game celebrates:
-- The **energy**
-- The **rivalry**
-- The **creative chaos**
-- The **shared laughter**
-- The **unspoken competitive unity**
+This game is a tribute to:
 
-of **Hall 13’s Diwali night.**
+- The **friendly rivalry**
+- The **shouts from one block to another**
+- The **strategic chaos**
+- The **brotherhood and excitement**
+- The **unforgettable Diwali night in Hall 13**
 
-A moment so iconic — it deserved to be turned into a game.
-
----
-
+Some memories shine brighter than fireworks —  
+This one became a game: **BG13**.
 
 ---
 
