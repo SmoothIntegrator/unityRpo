@@ -4,7 +4,7 @@
 
 Windows turned into sniper points.  
 Fireworks became artillery.  
-Voices echoed across the courtyard like war cries.
+Voices echoed across the hall like war cries.
 
 This game **recreates the energy, laughter, rivalry, and chaos** of that unforgettable Diwali night.
 
