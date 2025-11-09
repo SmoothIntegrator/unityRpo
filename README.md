@@ -1,4 +1,4 @@
-# 🎮 BG13 — Hall 13 Battle Game
+# 🎮 BG13 — BATTLE GROUNDS 13
 
 **BG13** is a competitive two–player slingshot battle game inspired by the **2025 Hall 13 Diwali B-Block + D-Block vs C-Block + E-Block rivalry** — a Diwali night that felt like an actual battleground.
 
